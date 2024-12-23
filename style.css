@@ -1,0 +1,40 @@
+.santa {
+    position: fixed;
+    right: -500px;
+}
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.cristmas_tree>img {
+    width: 650px;
+}
+.red_present_top {
+    position: relative;
+    bottom: 155px;
+    left: 225px;
+    transition-duration: 2500ms;
+    transition-timing-function: linear;
+    transform-origin: left bottom;
+}
+.blue_present_top {
+    position: relative;
+    bottom: 155px;
+    right: 211px;
+    transition-duration: 2500ms;
+    transition-timing-function: linear;
+    transform-origin: right bottom;
+}
+.red_present_top:hover {
+    transform: rotate(-80deg);
+}
+.blue_present_top:hover {
+    transform: rotate(80deg);
+}
+@media (max-width: 700px) {
+    .cristmas_tree>img {
+        width: 150px;
+    }
+}

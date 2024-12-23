@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/snow.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NEW YEAR 2025</title>
+</head>
+<body style="background-image: url(rozhdestvo_novyj_god_zima_130938_1920x1080.jpg); background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: center;">
+    <div class="santa"><img src="https://mnogoblog.ru/wp-content/uploads/2015/12/santasled.gif" alt="" /></div>
+    <div class="main">
+        <div class="red_present_top">
+            <a href="https://konturpromokode.pfm.live/" target="_blank"><img src="подарок верх.png" alt=""></a>
+        </div>
+        <div class="red_present_bottom">
+            <img src="подарок низ.png" alt="">
+        </div>
+        <div class="cristmas_tree">
+            <img src="novogodnjaja-jolka.png" alt="">
+        </div>
+        <div class="blue_present_bottom">
+            <img src="подарок низ 2.png" alt="">
+        </div>
+        <div class="blue_present_top">
+            <a href="https://konturpromokode.pfm.live/" target="_blank"><img src="подарок верх 2.png" alt=""></a>
+        </div>
+    </div>
+</body>
+<script src="//megatimer.ru/get/1d4390c6935d16e1b6b64dda77ff33f7.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js"></script>
+<script>
+ new Snow ();
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    var windowWidth = $(document).width();
+    var santa = $('.santa');
+    santa_right_pos = windowWidth + santa.width();
+    santa.right = santa_right_pos;
+    function movesanta(){
+    santa.animate({right : windowWidth +  santa.width()},15000, function(){
+    santa.css("right","-500px");
+    setTimeout(function(){
+    movesanta();
+    },100);
+    });
+    }
+    movesanta();
+    });
+    </script>
+</html>
